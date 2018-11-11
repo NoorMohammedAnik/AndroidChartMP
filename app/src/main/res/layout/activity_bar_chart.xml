@@ -4,11 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LineChartActivity">
+    tools:context=".BarChartActivity">
 
-    <com.github.mikephil.charting.charts.LineChart
-        android:id="@+id/linechart"
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/barchart"
         android:layout_width="match_parent"
-        android:layout_height="300dp" />
+        android:layout_height="400dp" />
 
 </RelativeLayout>

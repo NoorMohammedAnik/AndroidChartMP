@@ -8,7 +8,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button btnLineChart,btnPieChart;
+    Button btnLineChart,btnPieChart,btnBarChart,btnMultiLine;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -16,8 +16,19 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
+        btnBarChart=findViewById(R.id.btn_bar_chart);
         btnPieChart=findViewById(R.id.btn_pie_chart);
         btnLineChart=findViewById(R.id.btn_line_chart);
+        btnMultiLine=findViewById(R.id.btn_multi_line);
+
+        btnMultiLine.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(MainActivity.this,LineChartMultiActivity.class);
+                startActivity(intent);
+            }
+        });
+
 
         btnLineChart.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -32,6 +43,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent=new Intent(MainActivity.this, PieChartActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        btnBarChart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(MainActivity.this,BarChartActivity.class);
                 startActivity(intent);
             }
         });

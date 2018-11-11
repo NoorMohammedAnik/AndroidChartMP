@@ -23,4 +23,22 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="122dp"
         android:text="Pie Chart" />
+
+    <Button
+        android:id="@+id/btn_bar_chart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="205dp"
+        android:text="Bar Chart" />
+
+    <Button
+        android:id="@+id/btn_multi_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="147dp"
+        android:text="Line Chart Multilines" />
 </RelativeLayout>

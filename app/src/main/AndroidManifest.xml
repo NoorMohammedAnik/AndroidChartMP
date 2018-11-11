@@ -17,7 +17,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".LineChartActivity" />
-        <activity android:name=".PieChartActivity"></activity>
+        <activity android:name=".PieChartActivity" />
+        <activity android:name=".BarChartActivity" />
+        <activity android:name=".LineChartMultiActivity"></activity>
     </application>
 
 </manifest>
