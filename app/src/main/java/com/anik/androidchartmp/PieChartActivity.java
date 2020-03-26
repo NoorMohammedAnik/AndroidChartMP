@@ -1,10 +1,9 @@
 package com.anik.androidchartmp;
 
 import android.graphics.Color;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
-import com.github.mikephil.charting.animation.Easing;
 import com.github.mikephil.charting.charts.PieChart;
 import com.github.mikephil.charting.data.PieData;
 import com.github.mikephil.charting.data.PieDataSet;
@@ -40,7 +39,7 @@ public class PieChartActivity extends AppCompatActivity {
         yValues.add(new PieEntry(64f,"India"));
         yValues.add(new PieEntry(44f,"Pakistan"));
 
-        pieChart.animateY(1000, Easing.EasingOption.EaseInOutCubic);
+      //  pieChart.animateY(1000, Easing.EasingOption.EaseInOutCubic);
 
         PieDataSet dataSet=new PieDataSet(yValues,"Countries");
         dataSet.setSliceSpace(3f);

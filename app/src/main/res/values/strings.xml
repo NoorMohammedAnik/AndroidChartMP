@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Android Chart MP</string>
+
+    <string name="dash">-</string>
 </resources>
